@@ -1,0 +1,326 @@
+
+.background {
+    background: url(/img/background.jpg) center center fixed;
+    background-size: cover;
+    height: 100vh;
+    /*height: 2000px;*/
+}
+
+.header {
+    background:  rgb(28,28,28);
+    height:  60px;
+}
+
+.logo {
+    font-family: 'BoomBoom';
+    font-size: 40px;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor:  default;
+    color:  white;
+    margin-left:  30px;
+}
+.green_logo {
+    color:  rgb(136,171,7);
+}
+.white_logo {
+    margin-left:  -8px;
+}
+
+
+.socials {
+    border: 1px solid white;
+    height: 100%;
+}
+
+.vk {
+    display: inline-block;
+    background: url(/img/socials.jpg);
+    width: 64px;
+    height: 64px;
+    background-position: 10px 10px;
+}
+
+
+
+.form {
+    margin-top:  200px;
+}
+
+.registration_form{
+    background:  transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    height: 40px;
+    color: rgba(0,0,0,0.8);
+    width: 200px;
+    font-size: 16px;
+}
+.registration_form::-webkit-input-placeholder { color: rgb(136,171,7); font-size: 14px; }
+input[type="password"]:focus { outline: none; }
+
+.error {
+    color:  red;
+}
+.btn {
+    background: rgb(136,171,7);
+    color:  white;
+}
+
+.btn:hover {
+    color: rgb(28,28,28);
+}
+
+.main_container {
+    height: 500px;
+    box-shadow: 0px 0px 7px black;
+    border-radius: 6px;
+    z-index: 1;
+}
+.margin {
+    margin-top:  50px;
+}
+.header_chat {
+    font-family: 'BoomBoom';
+    text-align: center;
+    font-size: 20px;
+    background:  white;
+    color:   rgb(28,28,28);
+    height: 40px;
+    border-radius: 6px 6px 0px 0px;
+    line-height: 40px;
+    box-shadow: inset 0px -3px 0px rgb(128,128,128);
+    z-index: 3;
+}
+
+.container_users {
+    background: rgb(80,93,112);
+    height: 460px;
+    border-radius: 0px 0px 0px 6px;
+    z-index: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.header_users {
+    z-index: 2;
+    height:  40px;
+    border-bottom: 1px solid rgba(234,239,243,0.3);
+    font-size: 16px;
+    line-height: 40px;
+    background: rgb(80,93,112);
+}
+.form_search {
+    background: rgb(80,93,112);
+    margin-left: 10px;
+    border:  none;
+    width: 80%;
+    color:  white;
+    height: 98%;
+
+}
+input[type="text"]:focus { outline: none; }
+
+.user_icon {
+    margin-left:  12px;
+    color: #73869D;
+}
+
+.users {
+    height:  40px;
+    border-bottom: 1px solid rgba(234,239,243,0.3);
+    font-size: 14px;
+    line-height: 40px;
+    color:  #A0A0A0;
+    cursor: pointer;
+    background: rgb(80,93,112);
+    position: relative;
+}
+
+.online {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    border:  3px solid #82CC00;
+}
+.offline {
+    margin-top: 15px;
+    margin-left: 15px;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    border:  3px solid rgb(197,106,124);
+}
+
+.user_nickname {
+    position: absolute;
+    margin-left: 40px;
+
+}
+
+.scrol_users {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 420px;
+    background: rgb(80,93,112);
+}
+
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #aaa;
+    border-radius: 10px;
+}
+
+.message_container {
+    height: 420px;
+    background: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.message_nickname {
+    width: 24%;
+    text-align: center;
+    font-family:'Open Sans', Arial, sans-serif;
+    border-top:  1px solid rgb(170,170,170);
+    border-bottom:  1px solid rgb(170,170,170);
+    height: 20%;
+    font-size: 13px;
+    color: #333;
+    font-family: Verdana;
+
+}
+
+.message_text { 
+    border: 1px solid rgb(170,170,170);
+    border-right: none;
+    width: 60%; 
+    font-size: 13px;
+    color:  #333;
+    font-family: Verdana;
+}
+.message_time {
+    width: 16%;
+    font-size: 10px;
+    border-top:  1px solid rgb(170,170,170);
+    border-bottom:  1px solid rgb(170,170,170);
+    text-align: center;
+    color:  #333;
+    font-family: Verdana;
+}
+
+td {
+    height: 50px; 
+}
+
+.text_style {
+    margin-left: 10px;
+    display: block;
+}
+
+.result {
+    color:  white;
+    text-align: center;
+}
+
+
+/*.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  transition:all linear 0.3s;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity:0;
+  max-height:0;
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height:30px;
+}*/
+
+
+.input_container {
+    background: rgb(226,234,237);
+    height: 40px;
+    border-top: 1px solid rgb(128,128,128);
+    border-radius: 0px 0px 5px 0px; 
+    position: relative;
+}
+
+.input_message {
+    border-radius: 5px;
+    width:  80%;
+    height: 30px;
+    resize: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.input_message:focus { outline: none; }
+
+.submit {
+    position: absolute;
+    top: 5px;
+    right: 18px;
+    color: white;
+    height: 74%;
+    padding: 0px;
+    line-height: 0px;
+    width: 50px;
+}
+.submit:hover {
+    color: white;
+}
+
+button:active, button:focus {
+  outline: none !important;
+  color: white !important;
+}
+
+.table_message {
+    width: 100%;
+    word-wrap: break-word;
+    table-layout: fixed;
+}
+
+.creater {
+    background: #D6D9DB;
+}
+
+.attention {
+     position: absolute;
+     line-height: 420px;
+     text-align: center;
+     width: 100%;
+     color:  #333;
+     font-size: 16px;
+}
+
+.arrow {
+    color:  rgb(136,171,7);
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 204px;
+}
+
+.selected {
+    background: rgb(69,81,103);
+}
+

@@ -1,0 +1,15 @@
+<div class="row form">
+    <div class="col-lg-2 col-lg-offset-5">
+        <form name="myForm">
+            <div class="form-group" novalidate>
+                <input type="text" name="nick" class="registration_form " ng-model="data.nick" ng-maxlength="10" ng-minlength="3" ng-required="true" ng-pattern="Pattern" autocomplete="off" placeholder="Nickname">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="registration_form" ng-model="data.password" placeholder="Password" ng-minlength="7" ng-required="true" ng-pattern="Pattern">
+            </div>
+            <div class="error">{{error}}</div>
+            <button type="button" class="btn" ng-click="Inspection(myForm.nick.$valid,myForm.password.$valid); Enter(data)">Вход</button>
+            <button type="button" class="btn" ng-click="Inspection(myForm.nick.$valid,myForm.password.$valid); Registration(data)">Регистрация</button>
+        </form>
+    </div>
+</div>
